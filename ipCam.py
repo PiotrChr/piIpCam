@@ -55,7 +55,8 @@ app = Flask(__name__)
 app.register_blueprint(cam, url_prefix="/cam")
 app.register_blueprint(main)
 
-if __name__ in ['__main__', 'uwsgi_file_camLoader']:
+
+if __name__ in ['__main__', 'uwsgi_file_ipCam']:
     ap = argparse.ArgumentParser()
     ap.add_argument('-c', '--cameras', nargs='+', type=int, required=True)
     for _, value in ap.parse_args()._get_kwargs():
