@@ -8,7 +8,8 @@ PIHOUSEFOLDER := /home/pi/piIpCam
 # 	x11vnc -display :0
 
 prepare:
-	sudo apt-get update && sudo apt install -y build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev python3.9-dev python3-distutils uwsgi uwsgi-src uuid-dev libcap-dev libpcre3-dev libpython3.9-dev libpython3-all-dev uwsgi-plugin-python3 uwsgi build-essential nginx libatlas-base-dev uwsgi-plugin-python3
+	sudo apt-get update && sudo apt install -y build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev python3.9-dev python3-distutils uwsgi uwsgi-src uuid-dev libcap-dev libpcre3-dev libpython3.9-dev libpython3-all-dev uwsgi-plugin-python3 uwsgi build-essential nginx libatlas-base-dev uwsgi-plugin-python3 python3-pip
+
 
 prepare_resources:
 	sudo cp resources/nginx/cam.conf /etc/nginx/sites-available \
